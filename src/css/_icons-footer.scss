@@ -1,0 +1,51 @@
+/* block iconsEnd and footer*/
+
+.iconsEnd{
+    background: #ffffff;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    &-item{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: $fms;
+        &__title{
+            margin-bottom: -1px;
+            font-size: $fs*2.5;
+            color: #0d3693;
+        }
+        &__subtitle{
+            margin: -1px 0;
+            font-size: $fs*2.5;
+            color: #4f4f4f;
+        }
+        &__text{
+            font-size: $fs*2;
+            font-weight: bold;
+            color: #4f4f4f;
+        }
+    }
+}
+
+/* block footer */
+
+.footer{
+    background: #1b1b1b;
+    &__icon--color{
+        color: #1b1b1b;
+    }
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}

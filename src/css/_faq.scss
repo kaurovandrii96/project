@@ -1,0 +1,26 @@
+/*block faq, accordion*/
+
+.accordion{
+    width: 80%;
+    margin: 0 auto;
+    &__item{
+        padding: 20px 0;
+        border-bottom: 1px solid #d1d1d1;
+        font-family: $fms;
+        font-weight: bold;
+    }
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        font-size: $fs*3.5;
+        cursor: pointer;
+    }
+    &__text{
+        margin-top: 18px;
+        font-size: $fs*2.25;
+    }
+}
+
+.active{
+    color: #0d3693;
+}

@@ -1,0 +1,131 @@
+/* media request */
+
+@media screen and (max-width: 1100px) {
+    .container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container{
+        width: 90%;
+    }
+    .about-img{
+        width: 38%;
+    }
+    .about__img{
+        border: none;
+    }
+    .about-list{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about-content{
+        flex-direction: column;
+    }
+    .about-img{
+        margin-top: 20px;
+        width: 80%;
+    }
+    .about-list{
+        width: 80%;
+    }
+    .contact{
+        flex-wrap: wrap;
+    }
+    .posts-list{
+        flex-wrap: wrap;
+        &__item{
+            width: 47.5%;
+        }
+    }
+    .contactus__list{
+        flex-wrap: wrap;
+        &-item{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            width: 60%;
+        }
+    }
+    .menu-content{
+        flex-direction: column;
+    }
+    .footer__content{
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .nav{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .menu{
+        flex-direction: column;
+        text-align: center;
+        li{
+            margin: 10px 0;
+        }
+    }
+    .header-content{
+        flex-direction: column;
+    }
+    .soc-bar{
+        margin: 5px auto;
+    }
+    .contact{
+        margin: 0 auto;
+        justify-content: center;
+        &__link--indent{
+            margin-left: 0;
+        }
+    }
+    .arrow_box{
+        border-radius: 10px;
+        &__circle{
+            display: none;
+        }
+        &:after{
+            display: none;
+        }
+        &:before{
+            display: none;
+        }
+    }
+    .contact__link{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
+    .logo{
+        margin-left: 0;
+    }
+    .about-list__title--indent{
+        margin-left: 0;
+    }
+    .about-list__btn--indent{
+        margin-left: 0;
+    }
+    .about-list__item{
+        flex-direction: column;
+    }
+    .posts-list__item{
+        width: 100%;
+    }
+    .contactus__list-item{
+        width: 100%;
+    }
+    .icons{
+        flex-direction: column;
+        &-item{
+            width: 100%;
+        }
+    }
+    .contact__link--margin{
+        margin-left: 0;
+    }
+}

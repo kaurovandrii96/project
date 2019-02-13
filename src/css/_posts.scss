@@ -1,0 +1,33 @@
+/* block posts*/
+
+.posts{
+	background: #ffffff;
+	&__title{
+		font-family: $fmm;
+		font-size: $fs*5;
+		font-weight: bold;
+		color: #3c3c3c;
+		text-align: center;
+		&--red{
+			color: #fa4a33;
+		}
+	}
+	&-list{
+		display: flex;
+		justify-content: space-between;
+		font-family: $fms;
+		font-size: $fs*2.25;
+		color: #4f4f4f;
+		text-align: center;
+		text-transform: capitalize;
+		&__item{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+            width: 24%;
+            font-family: $fms;
+            font-weight: bold;
+		}
+	}
+}

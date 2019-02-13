@@ -1,0 +1,124 @@
+/*block feature*/
+
+.feature{
+    padding: 104px 0 110px 0;
+    background-image: url(../img/feature.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover;
+}
+
+.feature-content{
+	color: #f8fcff;
+	font-family: $fmm;
+	text-align: center;
+	&__title{
+		font-size: $fs*8;
+		margin-bottom: -1px;
+	}
+	&__subtitle{
+		font-family: $fms;
+		font-size: $fs*4;
+	}
+	&__text{
+		font-size: $fs*4;
+		font-weight: bold;
+	}
+	&__contact{
+		display: flex;
+		justify-content: space-around;
+	}
+	&__link{
+		display: flex;
+		align-items: center;
+		font-size: $fs*3.5;
+		&--font{
+			margin-left: 20px;
+			font-family: $fms;
+			font-size: $fs*3.5;
+			font-weight: bold;
+		}
+	}
+}
+
+.arrow_box {
+	display: inline-block;
+	position: relative;
+	padding: 10px;
+	background: #ffffff;
+	border-radius: 15px 0 0 15px;
+	color: #fa4a33;
+	font-size: $fs*6.25;
+	font-weight: bold;
+	&__circle{
+		display: inline-block;
+		margin: 0 30px;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background-color: #155fa9;
+	}
+}
+.arrow_box:after, .arrow_box:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-left-color: #ffffff;
+	border-width: 35px;
+	margin-top: -35px;
+}
+.arrow_box:before {
+	border-left-color: #ffffff;
+	border-width: 41px;
+	margin-top: -41px;
+}
+
+.triagle{
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 40px 80px 40px;
+	border-color: transparent transparent #009be2 transparent;
+	&--deg30{
+		transform: rotate(30deg);
+	}
+	&--deg-30{
+		padding-top: 50px;
+		transform: rotate(-30deg);
+	}
+	&--deg80{
+		transform: rotate(80deg);
+	}
+	&--deg-80{
+		padding-top: 15px;
+		padding-right: 45px;
+		transform: rotate(-80deg);
+	}
+	&--deg100{
+		transform: rotate(100deg);
+	}
+	&--deg-100{
+		padding-right: 45px;
+		transform: rotate(-100deg);
+	}
+}
+
+.fa-check{
+	font-size: $fs*7;
+	background: linear-gradient(45deg, #3677df 33%, #199eea 66%, #95b1db);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	color: #317ee1;
+  	display: table;
+}

@@ -1,0 +1,61 @@
+$fms: 'Source Sans Pro', sans-serif;
+$fmm: 'Montserrat', sans-serif;
+$fmp: 'ProximaNovaExCnSemibold', sans-serif;
+$fs: 8px;
+
+@font-face {
+    font-family: 'ProximaNovaExCnSemibold';
+    src: url('../fonts/ProximaNovaExCnSemibold.eot');
+    src: url('../fonts/ProximaNovaExCnSemibold.eot') format('embedded-opentype'),
+         url('../fonts/ProximaNovaExCnSemibold.woff2') format('woff2'),
+         url('../fonts/ProximaNovaExCnSemibold.woff') format('woff'),
+         url('../fonts/ProximaNovaExCnSemibold.ttf') format('truetype'),
+         url('../fonts/ProximaNovaExCnSemibold.svg#ProximaNovaExCnSemibold') format('svg');
+}
+
+/*specification*/
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1920px;
+    min-width: 320px;
+    font-family: $fms;
+    font-size: $fs*2;
+    color: #4f4f4f;
+}
+
+div, img{
+    box-sizing: border-box;
+}
+
+ul, li{
+    display: block;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+img{
+    display: block;
+}
+
+.container{
+    margin: 0 auto;
+    width: 60%;
+    max-width: 1170px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@import 'header';
+@import 'feature';
+@import 'about';
+@import 'posts';
+@import 'contactus';
+@import 'benefits';
+@import 'faq';
+@import 'icons-footer';
+@import 'media';

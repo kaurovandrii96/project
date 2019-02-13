@@ -1,0 +1,37 @@
+/* block benefits*/
+
+.benefits{
+    background: #ffffff;
+}
+
+.title{
+    font-family: $fmm;
+    font-size: $fs*4;
+    color: #3c3c3c;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 130px;
+    &__img{
+        margin-right: 15px;
+    }
+}
+
+.item{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__title{
+        margin-bottom: -2px;
+        color: #0d3693;
+        font-size: $fs*3.5;
+    }
+    &__text{
+        color: #4f4f4f;
+        font-weight: bold;
+    }
+}
